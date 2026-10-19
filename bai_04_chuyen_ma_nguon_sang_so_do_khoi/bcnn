@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main(){
+	int a, b, ucln, bcnn;
+	scanf("%d%d",&a,&b);
+	int x = a, y = b;
+	while(y != 0){
+		int r = x % y;
+		x = y;
+		y = r;
+	}
+	ucln = x;
+	bcnn = (a * b)/ucln;
+	printf("%d", bcnn);
+	return 0;
+}
